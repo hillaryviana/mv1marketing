@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Users, Video, Rocket, PenTool, Film, Scissors, Globe, Brain, Bot } from "lucide-react";
+import { Users, Video, Rocket, PenTool, Film, Scissors, Globe, Brain, Bot, Palette } from "lucide-react";
 import { RevealOnScroll } from "./RevealOnScroll";
 
 const Services = () => {
@@ -28,6 +28,11 @@ const Services = () => {
       icon: Users,
       title: "Social mídia",
       description: "Gestão estratégica das suas redes sociais para construir autoridade, engajamento e presença digital marcante.",
+    },
+    {
+      icon: Palette,
+      title: "Designer",
+      description: "Identidade visual e artes exclusivas que elevam o posicionamento da sua marca no mercado.",
     },
     {
       icon: Video,

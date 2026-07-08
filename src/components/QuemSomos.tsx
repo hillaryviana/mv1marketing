@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import wellingtonImg from "../assets/wellington.png";
-import hillaryImg from "../assets/hillary.jpg";
+import hillaryImg from "../assets/wellington.png";
 import { RevealOnScroll } from "./RevealOnScroll";
 import { motion } from "framer-motion";
 
@@ -32,12 +31,6 @@ const QuemSomos = () => {
       nome: "Hillary Viana",
       cargo: "CVO, Vídeo Maker & Estrategista",
       descricao: "Hillary é líder hands-on, com visão macro e operação orientada a performance. Hillary já levou clientes a faturarem +280 mil reais com suas estratégias. Atua como vídeo maker, estrategista de marketing e gestora criativa — comandando criação, direção e execução com o padrão MV1: profissional, inteligente e focado em resultado real.",
-      foto: wellingtonImg,
-    },
-    {
-      nome: "Wellington Júnior",
-      cargo: "Sócio, Gestor de Tráfego & Estrategista",
-      descricao: "Com uma trajetória iniciada em 2019 no mercado digital, consolidei minha expertise técnica e visão de negócios como Gestor de Tráfego, planejador e estrategista. Atualmente, aplico essa experiência acumulada como sócio da agência de marketing MV1, liderando o desenvolvimento de estratégias integradas e gestão de mídia de alta performance.",
       foto: hillaryImg,
     },
   ];
@@ -57,7 +50,7 @@ const QuemSomos = () => {
           </p>
         </RevealOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 lg:gap-12 max-w-xl mx-auto">
           {socios.map((socio, index) => (
             <RevealOnScroll
               key={index}
